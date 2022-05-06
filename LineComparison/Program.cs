@@ -7,7 +7,10 @@ namespace LineComparison
     static void Main(String[] args)
         {
             Console.WriteLine("Welcome to Line Comparison Computation");   
+            LineComparison obj = new LineComparison();
+            obj.lineLengthComparison();
         }
+
     }
 }
 
