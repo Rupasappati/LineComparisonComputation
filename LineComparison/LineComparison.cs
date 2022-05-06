@@ -11,6 +11,9 @@ namespace LineComparison
     public class LineComparison
     {
         double LineOfLength;
+        double lengthLine1;
+        double lengthLine2;
+
         public void lineLengthComparison()
         {
             //Input of Cordinates
@@ -34,14 +37,26 @@ namespace LineComparison
             int y4 = Convert.ToInt32(Console.ReadLine());
 
             //Length of the lines
-            double lengthLine1 = Math.Pow(x2 - x1, 2)+Math.Pow(y2 - y1, 2);
+            lengthLine1 = Math.Pow(x2 - x1, 2)+Math.Pow(y2 - y1, 2);
             LineOfLength = Math.Sqrt(lengthLine1);
             Console.WriteLine("Length of the line 1 is {0}", LineOfLength);
 
-            double lengthLine2 = Math.Pow(x4 - x3, 2) + Math.Pow(y4 - y3, 2);
+            lengthLine2 = Math.Pow(x4 - x3, 2) + Math.Pow(y4 - y3, 2);
             LineOfLength = Math.Sqrt(lengthLine2);
             Console.WriteLine("Length of the line 2 is {0}", LineOfLength);
         }
+        public void EqualityOfLines()
+        {
+            if (lengthLine1 == lengthLine2)
+            {
+                Console.WriteLine("Two lines are Equal");
+            }
+            else
+            {
+                Console.WriteLine("Two lines are not Equal");
+            }
+        }
+
     }
-    
+
 }
