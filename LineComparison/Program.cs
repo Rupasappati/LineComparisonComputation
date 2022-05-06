@@ -10,6 +10,7 @@ namespace LineComparison
             LineComparison obj = new LineComparison();
             obj.lineLengthComparison();
             obj.EqualityOfLines();
+            obj.CompareTwoLines();
         }
 
     }
