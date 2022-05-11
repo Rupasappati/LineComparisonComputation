@@ -8,8 +8,12 @@ namespace LineComparison
         {
             Console.WriteLine("Welcome to Line Comparison Computation");   
             LineComparison obj = new LineComparison();
+            
+            //Line line comparison
             obj.lineLengthComparison();
+            //checking equality of lines
             obj.EqualityOfLines();
+            //comparison of two lines
             obj.CompareTwoLines();
         }
 
